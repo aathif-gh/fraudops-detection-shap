@@ -7,7 +7,7 @@ A production-style fraud detection pipeline that goes beyond a notebook: trained
 
 > Note: the API is hosted on a free tier that sleeps after ~15 min of inactivity. The first request after idle time may take 30-50 seconds to respond while it wakes up.
 
-![Dashboard Screenshot](PLACEHOLDER_SCREENSHOT_DASHBOARD.png)
+![Dashboard Screenshot](Screenshot 2026-07-31 032151.png)
 
 ---
 
