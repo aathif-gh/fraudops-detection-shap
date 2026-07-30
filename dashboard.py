@@ -11,11 +11,7 @@ API_URL = "https://fraudops-api.onrender.com/predict"
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("creditcard.csv")
-    df = df.sort_values("Time").reset_index(drop=True)
-    n = len(df)
-    val_end = int(n * 0.85)
-    test_df = df.iloc[val_end:]  # test set only — same split logic as train.py
+    test_df = pd.read_csv("creditcard_test.csv")
     return test_df.sample(50, random_state=1).reset_index(drop=True)
 
 df = load_data()
