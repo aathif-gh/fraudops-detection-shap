@@ -7,8 +7,10 @@ A production-style fraud detection pipeline that goes beyond a notebook: trained
 
 > Note: the API is hosted on a free tier that sleeps after ~15 min of inactivity. The first request after idle time may take 30-50 seconds to respond while it wakes up.
 
-![Dashboard Screenshot](Screenshot 2026-07-31 032151.png)
-
+<p align="center">
+  <img src="assets/dashboard.png" width="48%">
+  <img src="assets/dashboard_result.png" width="48%">
+</p>
 ---
 
 ## Problem
@@ -80,8 +82,10 @@ Every flagged transaction comes with its top contributing features, so a decisio
 - **Held-out transaction feed** — 50 real transactions from the test set, each showing the model's prediction, probability, ground truth label, and SHAP explanation
 - **Analyst review workflow** — mark transactions as reviewed (session-based; not persisted to a database in this demo — see Limitations)
 
-![Manual Tester Screenshot](PLACEHOLDER_SCREENSHOT_TESTER.png)
-![Transaction Feed Screenshot](PLACEHOLDER_SCREENSHOT_FEED.png)
+<p align="center">
+  <img src="assets/recent_transactions.png" width="48%">
+  <img src="assets/recent_transactionsn.png" width="48%">
+</p>
 
 ---
 
